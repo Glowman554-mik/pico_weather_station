@@ -7,6 +7,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include(pico-sdk/pico_sdk_init.cmake)
 include(pico-sdk/tools/CMakeLists.txt)
 
+add_subdirectory(picoi2clcd)
+add_subdirectory(picodht)
+
 project(pico)
 
 # initialize the Raspberry Pi Pico SDK
@@ -26,6 +29,8 @@ include_directories(${TARGET}
 # pull in common dependencies
 target_link_libraries(${TARGET} 
     pico_stdlib
+    picoi2clcd
+	picodht
 )
 
 # enable usb output & uart output

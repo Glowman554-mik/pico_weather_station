@@ -1,3 +1,9 @@
 [submodule "pico-sdk"]
 	path = pico-sdk
 	url = https://github.com/raspberrypi/pico-sdk
+[submodule "picodht"]
+	path = picodht
+	url = https://github.com/Glowman554-mik/picodht
+[submodule "picoi2clcd"]
+	path = picoi2clcd
+	url = https://github.com/Glowman554-mik/picoi2clcd
